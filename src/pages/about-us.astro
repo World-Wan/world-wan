@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="關於沃原"
+  description="沃原科技專注網路基礎建設整合與機房建置，擁有20年以上工程經驗與技術實力，提供有線無線網路規劃、系統整合服務，協助企業提升效率、創造雙贏。"
+>
+  <!-- Hero -->
+  <section class="bg-[#0F74BA] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-3">關於沃原</h1>
+      <p class="text-blue-100">專業網路基礎建設整合服務供應商</p>
+    </div>
+  </section>
+
+  <!-- Company Name & Logo -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/name-1.jpg"
+            alt="沃原科技名稱由來"
+            class="rounded-xl shadow-md w-full"
+          />
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-[#0F74BA] mb-4">公司名稱</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            沃原科技股份有限公司（World-wan Technology Co., Ltd.）成立於2023年，專注於網路基礎建設與系統整合服務。公司名稱「沃原」寓意「肥沃廣闊的平原」，象徵我們以踏實耕耘、兼容並蓄的精神，穩健拓展每項專案。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Logo融合藍色地球與網路孔圖形，結合雙「W」意象，展現我們立足臺灣、串聯全球的願景。英文名稱 World-wan，代表以世界網路為基礎，提供專業、彈性且高效的網路整合解決方案。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-2xl font-bold text-[#0F74BA] mb-6">公司概述</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            沃原科技股份有限公司成立於2023年，定位為專業的<strong>網路基礎建設整合服務供應商</strong>。
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            提供企業有線／無線網路架構、機房建置與系統整合解決方案。團隊核心成員擁有超過20年網路佈線與機房施工經驗，技術人員具備15年以上資通產品服務背景，並結合具備弱電整合與網路設備代理經驗的專案業務，提供從無到有的一站式規劃與執行。
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            我們專注於IDC 機房建置、有線無線設備整合、網路架構設計，並持續精進技術、導入電子化流程，以高效率與高品質，協助客戶建構穩定可靠的數位基礎環境。
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/a1-1024x1024.jpg" alt="沃原科技" class="rounded-xl shadow-md" />
+          <img src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/a3.jpg" alt="網路建置" class="rounded-xl shadow-md" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-center text-gray-900 mb-12">我們的優勢</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { title: '創新性', desc: '在產品及服務方面投入研究，帶給客戶新的理念、技術與商業模式，提升雙方競爭力共創雙贏。' },
+          { title: '靈活性', desc: '相較於大型企業，擁有快速調整業務策略的靈活性，能因應客戶客製化需求，提供有彈性的解決方案。' },
+          { title: '低成本結構', desc: '較低的固定成本和較高的機動性，能提供優良品質卻更有競爭力的價格，讓每一分投入都物超所值。' },
+          { title: '快速決策', desc: '由於組織結構相對較小，能更迅速的決策並加速客戶問題解決及改進流程，快速應對市場變化。' },
+          { title: '創業精神', desc: '創始團隊充滿激情和創業精神，推動沃原不斷成長和突破，建立有衝勁的文化以吸引優秀人才。' },
+          { title: '科技驅動', desc: '不論內部管理或客戶需求，以科技為基礎，利用最新技術和數據分析等工具，提供更先進的解決方案。' },
+          { title: '不同品牌定位', desc: '建立清晰的品牌形象，用專業與服務熱忱在市場上塑造形象，吸引目標客戶並建立忠誠度。' },
+          { title: '機會快速成長', desc: '市場需要更有靈活性的廠商，在雙邊乃至整體考量，提供完善建議，進行互助合作共同成長。' },
+        ].map(item => (
+          <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-[#0F74BA] mb-2">{item.title}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Win-Win -->
+  <section class="bg-[#0F74BA] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-6">選擇沃原，創造雙贏</h2>
+        <p class="text-blue-100 leading-relaxed mb-6">
+          在每個專案中，除了重視網路建置規劃與施工品質控管，沃原科技更關注企業所重視的成本效益比（Cost-Performance Ratio）。我們致力於提供穩定可靠、價格合理的整合解決方案，真正讓每一分投入都物超所值。
+        </p>
+        <p class="text-blue-100 leading-relaxed mb-8">
+          專案成立後，將由具備產業經驗的專案業務主導溝通與執行，協助減少跨部門溝通成本、解決系統對接與設備相容問題、優化整體專案進度與品質控管。
+        </p>
+        <a href="/contact-us" class="inline-block px-8 py-3.5 bg-[#F2830A] text-white font-semibold rounded-full hover:bg-orange-600 transition-colors shadow-lg">
+          立即聯絡我們
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

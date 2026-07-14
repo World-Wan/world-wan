@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="專業整合"
+  description="沃原科技提供結構化佈線(SCS)、網路基礎架構(Infra)、IDC機房建置等專業整合服務，從規劃設計到施工維護一站到位。"
+  image="https://www.world-wan.com.tw/wp-content/uploads/2024/01/i1.jpg"
+>
+  <!-- Hero -->
+  <section class="bg-[#0F74BA] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-3">專業整合</h1>
+      <p class="text-blue-100">結構化佈線、網路架構、IDC機房建置</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Main image -->
+      <div class="mb-12">
+        <img
+          src="https://www.world-wan.com.tw/wp-content/uploads/2024/01/i1-1024x1024.jpg"
+          alt="專業整合"
+          class="rounded-xl shadow-lg w-full max-h-96 object-cover"
+        />
+      </div>
+
+      <!-- SCS -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-[#0F74BA] mb-4">Structured Cabling System (SCS) 結構化/整合式/綜合佈線</h2>
+        <p class="text-gray-700 leading-relaxed">
+          按照三種原則：標準、統一和簡單的結構化編制方式佈建各建築物（或建築群）內部各系統的資通訊線路。
+        </p>
+      </div>
+
+      <!-- Infra -->
+      <div class="mb-12 bg-gray-50 rounded-xl p-8">
+        <h2 class="text-2xl font-bold text-[#0F74BA] mb-4">Infrastructure (Infra) 網路 討論建議、設計架構、建置維護</h2>
+        <p class="text-gray-700 leading-relaxed">
+          於客戶內部網路新建或調整時，針對工程面、網路架構或資訊安全層面進行討論、規劃、建置、維護。
+        </p>
+      </div>
+
+      <!-- IDC -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-[#0F74BA] mb-4">Internet Data Center (IDC) 網路資料中心/數據中心機房建置</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          針對機房建置之整合服務進行整體設計、圖面繪製、簡報說明、建置維護。
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          工程項目包含：
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {['空間設計', '隔間裝修', '高架地板', '空調系統', '冷熱通道', '氣體式消防', '精密配電', '環控系統', '光導線(槽)架', 'PTF預製化光纖配線系統', '機房搬遷服務', '其他衍生需求'].map(item => (
+            <div class="bg-blue-50 text-[#0F74BA] text-sm font-medium px-3 py-2 rounded-lg text-center">{item}</div>
+          ))}
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-12">
+        <a href="/contact-us" class="inline-block px-8 py-3.5 bg-[#F2830A] text-white font-semibold rounded-full hover:bg-orange-600 transition-colors shadow-md">
+          立即諮詢
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

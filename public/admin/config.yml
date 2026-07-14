@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/world-wan
+  branch: main
+  base_url: https://sveltia-cms-auth.YOUR_WORKER.workers.dev
+
+# 本地開發時使用 local_backend: true
+# local_backend: true
+
+media_folder: public/uploads
+public_folder: /uploads
+
+locale: zh-Hant
+
+collections:
+  - name: blog
+    label: 文章
+    label_singular: 文章
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: 標題
+        name: title
+        widget: string
+        hint: 文章標題
+      - label: 發布日期
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+      - label: 描述（SEO）
+        name: description
+        widget: string
+        required: false
+        hint: 顯示在搜尋結果的說明文字（建議100-160字）
+      - label: 分類
+        name: category
+        widget: select
+        options:
+          - { label: "最新消息", value: "news" }
+          - { label: "產業知識", value: "domain" }
+        default: domain
+      - label: 封面圖片
+        name: image
+        widget: image
+        required: false
+        hint: 建議尺寸 1200×630px
+      - label: 自訂網址代碼（僅中文URL用）
+        name: urlSlug
+        widget: string
+        required: false
+        hint: 留空則自動使用檔案名稱
+      - label: 內容
+        name: body
+        widget: markdown

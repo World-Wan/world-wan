@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="服務項目" description="沃原科技提供網路服務、通訊多媒體、電力工程、專業整合等全方位科技服務，透明報價、專業施工、完善保固。">
+  <!-- Hero -->
+  <section class="bg-[#0F74BA] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-3">服務項目</h1>
+      <p class="text-blue-100">專注於資訊網路工程整合、電腦機房規劃建置</p>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+          <h2 class="text-lg font-bold text-[#0F74BA] mb-3">報價方式</h2>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            傾聽客戶需求並提供專業建議，報價單為條列式列出各項用料數量及價格，資訊及價格透明公開，達成客戶真正想要的。
+          </p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+          <h2 class="text-lg font-bold text-[#0F74BA] mb-3">施工方式</h2>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            針對專案新增線路系統化編號，建立平面點位圖以利管理，並於完成後提供專業測試報告及工程保固，讓您省錢又安心。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service List -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- 網路服務 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <a href="/internet" class="block overflow-hidden rounded-xl shadow-md group">
+          <img
+            src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/pic1-1024x683.jpg"
+            alt="網路服務"
+            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </a>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">網路服務</h2>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li class="flex items-start gap-2"><span class="text-[#0F74BA] mt-0.5">●</span>網路佈線、光纖熔接&光纜佈放</li>
+            <li class="flex items-start gap-2"><span class="text-[#0F74BA] mt-0.5">●</span>IP Cam監視器、門禁系統建置</li>
+            <li class="flex items-start gap-2"><span class="text-[#0F74BA] mt-0.5">●</span>防火牆Firewall、交換器Switch、無線AP（Wi-Fi）、NAS儲存設備規劃&經銷</li>
+          </ul>
+          <a href="/internet" class="inline-block px-6 py-2.5 bg-[#0F74BA] text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">閱讀更多</a>
+        </div>
+      </div>
+
+      <!-- 通訊多媒體 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div class="lg:order-2">
+          <a href="/media" class="block overflow-hidden rounded-xl shadow-md group">
+            <img
+              src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/pic2.jpg"
+              alt="通訊多媒體"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+        </div>
+        <div class="lg:order-1">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">通訊多媒體</h2>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li class="flex items-start gap-2"><span class="text-[#8DC740] mt-0.5">●</span>電話交換機、IP Phone系統佈建</li>
+            <li class="flex items-start gap-2"><span class="text-[#8DC740] mt-0.5">●</span>多媒體廣播、投影機、電視牆設置</li>
+            <li class="flex items-start gap-2"><span class="text-[#8DC740] mt-0.5">●</span>影音會議系統、KVM切換器、各類線材經銷</li>
+          </ul>
+          <a href="/media" class="inline-block px-6 py-2.5 bg-[#8DC740] text-white rounded-full text-sm font-medium hover:bg-green-600 transition-colors">閱讀更多</a>
+        </div>
+      </div>
+
+      <!-- 電力工程 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <a href="/electric" class="block overflow-hidden rounded-xl shadow-md group">
+          <img
+            src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/pic3.jpg"
+            alt="電力工程"
+            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </a>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">電力工程</h2>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li class="flex items-start gap-2"><span class="text-[#F2830A] mt-0.5">●</span>資訊專用電源、配電盤設計施工</li>
+            <li class="flex items-start gap-2"><span class="text-[#F2830A] mt-0.5">●</span>不斷電系統UPS 電池汰換、建置維護</li>
+            <li class="flex items-start gap-2"><span class="text-[#F2830A] mt-0.5">●</span>發電機&ATS、穩壓器、專業排插PDU經銷&建置</li>
+          </ul>
+          <a href="/electric" class="inline-block px-6 py-2.5 bg-[#F2830A] text-white rounded-full text-sm font-medium hover:bg-orange-600 transition-colors">閱讀更多</a>
+        </div>
+      </div>
+
+      <!-- 專業整合 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div class="lg:order-2">
+          <a href="/integrate" class="block overflow-hidden rounded-xl shadow-md group">
+            <img
+              src="https://www.world-wan.com.tw/wp-content/uploads/2023/12/pic4.jpg"
+              alt="專業整合"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+        </div>
+        <div class="lg:order-1">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">專業整合</h2>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li class="flex items-start gap-2"><span class="text-[#0F74BA] mt-0.5">●</span>Structured Cabling System (SCS) 結構化/整合式/綜合佈線</li>
+            <li class="flex items-start gap-2"><span class="text-[#0F74BA] mt-0.5">●</span>Infrastructure (Infra) 網路 討論建議、設計架構、建置維護</li>
+            <li class="flex items-start gap-2"><span class="text-[#0F74BA] mt-0.5">●</span>Internet Data Center (IDC) 網路資料中心/數據中心機房建置</li>
+          </ul>
+          <a href="/integrate" class="inline-block px-6 py-2.5 bg-[#0F74BA] text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gray-50 py-16 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">需要專業諮詢？</h2>
+      <p class="text-gray-500 mb-8">歡迎聯絡沃原科技，我們將針對您的需求提供最適合的方案。</p>
+      <a href="/contact-us" class="inline-block px-8 py-3.5 bg-[#F2830A] text-white font-semibold rounded-full hover:bg-orange-600 transition-colors shadow-md">
+        聯絡我們
+      </a>
+    </div>
+  </section>
+</Layout>
